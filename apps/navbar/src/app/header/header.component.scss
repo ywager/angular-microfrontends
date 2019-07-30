@@ -1,0 +1,32 @@
+.ant-layout-header {
+  position: fixed;
+  border-bottom: 1px solid #e8e8e8;
+  width: 100%;
+  z-index: 100;
+
+  .top-nav-left {
+    float: left;
+    height: 46px;
+
+    &>.ant-menu-item {
+      border-bottom: 0px solid #fff;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        border-bottom: 0px solid #fff;
+      }
+    }
+
+    &>.ant-menu-item-selected {
+      border-bottom: 0px solid #fff;
+    }
+
+    li {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

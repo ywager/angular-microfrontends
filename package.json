@@ -1,0 +1,20 @@
+{
+  "name": "angular-spa-test",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd apps/navbar && yarn && cd ../app1/ && yarn",
+    "start": "npm run build-apps && npm run serve",
+    "build-apps": "cd apps/navbar && npm run build && cd ../app1/ && npm run build",
+    "serve": "serve -s -l 4200"
+  },
+  "author": "ywager",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.1.0"
+  },
+  "dependencies": {
+    "single-spa": "^4.3.5",
+    "zone.js": "~0.8.26"
+  }
+}
